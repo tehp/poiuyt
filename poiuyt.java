@@ -1,70 +1,69 @@
 package poiuyt;
 
-
-import java.awt.*;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import javax.swing.*;
+import java.util.Scanner;
 
 
 public class Main {
 
+	public static void main(String[] args) {
+		
+		
+		int position = 1;
+		String one = ("X--------------------------O \nYou haven't started your trip to school yet!");
+		String two = ("-X-------------------------O \nYou are this close to school");
+		String three = ("--X------------------------O \nYou are this close to school");
+		String four = ("---X-----------------------O \nYou are this close to school");
+		String five = ("----X----------------------O");
+		String six = ("-----X---------------------O");
+		String seven = ("------X--------------------O");
+		String eight = ("-------X-------------------O");
+		String nine = ("--------X------------------O");
+		String ten = ("---------X-----------------O");
+		String eleven = ("----------X----------------O");
+		String twelve = ("-----------X---------------O");
+		String thirteen = ("------------X--------------O");
+		String fourteen = ("-------------X-------------O");
+		String fifteen = ("--------------X------------O");
+		String sixteen = ("---------------X-----------O");
+		String seventeen = ("----------------X----------O");
+		String eighteen = ("-----------------X---------O");
+		String nineteen = ("------------------X--------O");
+		String twenty = ("-------------------X-------O");
+		String twentyone = ("--------------------X------O");
+		String twentytwo = ("---------------------X-----O");
+		String twentythree = ("----------------------X----O");
+		String twentyfour = ("-----------------------X---O");
+		String twentyfive = ("------------------------X--O");
+		String twentysix = ("-------------------------X-O");
+		String twentyseven = ("--------------------------XO");
+		
+		String text;
+		@SuppressWarnings("resource")
+		Scanner scan = new Scanner(System.in);
 	
+		System.out.println("You have just woken up, school starts in 30 minutes! \n What would you like to do? \n 1) Go back to bed. \n 2) Get dressed. \n 3) Lay in bed for 5 minutes.");
+		//Question1
+		text = scan.nextLine();
+	//1
+		if(text.equals("1")){
+				System.out.println(one);
+		}
+			//2
+				if(text.equals("2")){
+					
+					position ++;
+					if(position==1);
+					System.out.println(two);
+				}
+					//3
+						if(text.equals("3")){
+							System.out.println(one);
+						}
+		if (text=="1"){
+			System.out.println("You have just woken up, school starts in 30 minutes! \n What would you like to do? \n 1) Go back to bed. \n 2) Get dressed. \n 3) Lay in bed for 5 minutes.");	
+		}
+		
+		
+		}
 	
-	
-    public static void main(String[] args) {
-        new Main();
-    }
-
-    public Main() {
-        EventQueue.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-                } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException ex) {
-                }
-
-                new BackgroundWorker().execute();
-
-            }
-
-        });
-    }
-
-    public class BackgroundWorker extends SwingWorker<Void, Void> {
-
-        private ProgressMonitor monitor;
-
-        public BackgroundWorker() {
-            addPropertyChangeListener(new PropertyChangeListener() {
-                @Override
-                public void propertyChange(PropertyChangeEvent evt) {
-                    if ("progress".equalsIgnoreCase(evt.getPropertyName())) {
-                        if (monitor == null) {
-                            monitor = new ProgressMonitor(null, "poiuyt Launch", null, 0, 75);
-                        }
-                        monitor.setProgress(getProgress());
-                    }
-                }
-
-            });
-        }
-
-        @Override
-        protected void done() {
-            if (monitor != null) {
-                monitor.close();
-            }
-        }
-
-        @Override
-        protected Void doInBackground() throws Exception {
-            for (int index = 0; index < 100; index++) {
-                setProgress(index);
-                Thread.sleep(40);
-            }
-            return null;
-        }
-    }
-}
+	}
