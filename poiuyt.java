@@ -156,21 +156,8 @@ public class Main {
 						position = 4;
 						if(position==4){
 							System.out.println(seven + "\nWho needs food anyways? \nYou keep walking." + "\n*****************************");
-						}
-					}
-					
-						
-					
 				}
-	
-	
-	
+			}
+		}
 	}
-				}
-		
-	
-				
-			
-		
-		
-
+}
