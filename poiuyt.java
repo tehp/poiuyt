@@ -8,6 +8,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		
+//PLACES!
 		int position = 1;
 		String one = ("X--------------------------O \nYou haven't started your trip to school yet!");
 		String two = ("-X-------------------------O \nYou are this close to school");
