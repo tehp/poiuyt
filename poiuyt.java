@@ -72,35 +72,29 @@ public class Main {
 	
 		//Path 1-1 FINISHED!
 		if(position==1){
-			System.out.println("The bells is about to go! You slept in too long! \n 1) Skip class, go back to bed. \n 2) Hurry, put clothes on, exit house to school \n 3) Take your time, make a lunch, watch some TV and hopefully make it to school before 2nd block starts.");
+			System.out.println("The bells are about to go! You slept in too long! \n 1) Skip class, go back to bed. \n 2) Hurry, put clothes on, exit house running to school \n 3) Take your time, make a lunch, watch some TV and hopefully make it to school before 2nd block starts.");
 			text = scan.nextLine();
 			if(text.equals("1")){
 				position --;
 				if(position==0){
-					System.out.println(one + " You have chosen to skip class!" + "\n" + position + "/26" + "\n*****************************" );
+					System.out.println(one + " You have chosen to skip class! Was that worth it?" + "\n" + position + "/26" + "\n*****************************" );
 				}
 			}
 				if(text.equals("2")){
 				position ++;
 				if(position==2){
-					System.out.println(two + " You rushed out the door" + "\n" + position + "/26" + "\n*****************************");
+					System.out.println(two + " You rushed out the door, you head towards the school at a fast pace!" + "\n" + position + "/26" + "\n*****************************");
 				}
 			}
 				if(text.equals("3")){
 				
 				if(position==1){
-					System.out.println(one + " You have chosen nutrition over education!" + "\n" + position + "/26" + "\n*****************************");
+					System.out.println(one + " You have chosen nutrition over education! Mom would be proud... or would she?" + "\n" + position + "/26" + "\n*****************************");
 		}
 				
 			
 		//Path 2-1 NOT FINISHED!
-	
-	
-	
-	
-	
-	}
-}
+			}
+		}
 	}	
 }
-	
