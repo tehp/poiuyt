@@ -9,11 +9,12 @@ public class Main {
 		
 		
 //PLACES!
+		int dead = 0;
 		int position = 1;
 		String one = ("X--------------------------O \nYou haven't started your trip to school yet!");
-		String two = ("-X-------------------------O \nYou are this close to school");
-		String three = ("--X------------------------O \nYou are this close to school");
-		String four = ("---X-----------------------O \nYou are this close to school");
+		String two = ("-X-------------------------O \nYou are this close to school.");
+		String three = ("--X------------------------O");
+		String four = ("---X-----------------------O");
 		String five = ("----X----------------------O");
 		String six = ("-----X---------------------O");
 		String seven = ("------X--------------------O");
@@ -37,13 +38,14 @@ public class Main {
 		String twentyfive = ("------------------------X--O");
 		String twentysix = ("-------------------------X-O");
 		String twentyseven = ("--------------------------XO");
+		String lose = ("You have failed your trip to school. Make better decisions next time!");
 		
 		String text;
 		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		
 		//Original Question FINISHED!
-		System.out.println("You have just woken up, school starts in 30 minutes! \nWhat would you like to do? \n 1) Go back to bed. \n 2) Get dressed. \n 3) Lay in bed for 5 minutes.");
+		System.out.println("You have just woken up, school starts in 30 minutes! \nWhat would you like to do? \n 1) Go back to bed. \n 2) Get ready for school, leave house headed towards school. \n 3) Lay in bed for 5 minutes.");
 		
 		text = scan.nextLine();
 			//1
@@ -56,7 +58,7 @@ public class Main {
 			//2
 				if(text.equals("2")){
 					
-					position ++;
+					position = 2;
 					if(position==2){
 					System.out.println(two + "\n" + position + "/26" + "\n*****************************");
 					}
@@ -75,26 +77,100 @@ public class Main {
 			System.out.println("The bells are about to go! You slept in too long! \n 1) Skip class, go back to bed. \n 2) Hurry, put clothes on, exit house running to school \n 3) Take your time, make a lunch, watch some TV and hopefully make it to school before 2nd block starts.");
 			text = scan.nextLine();
 			if(text.equals("1")){
-				position --;
+				position = 0;
 				if(position==0){
-					System.out.println(one + " You have chosen to skip class! Was that worth it?" + "\n" + position + "/26" + "\n*****************************" );
+					System.out.println(one + " \nYou have chosen to skip class! You have failed your trip to school!" + "\n" + position + "/26" + "\n*****************************" );
 				}
 			}
 				if(text.equals("2")){
-				position ++;
+				position = 2;
 				if(position==2){
 					System.out.println(two + " You rushed out the door, you head towards the school at a fast pace!" + "\n" + position + "/26" + "\n*****************************");
 				}
 			}
 				if(text.equals("3")){
 				
-				if(position==1){
+					position = 2;
+				if(position==2){
 					System.out.println(one + " You have chosen nutrition over education! Mom would be proud... or would she?" + "\n" + position + "/26" + "\n*****************************");
+		}
+				}
 		}
 				
 			
 		//Path 2-1 NOT FINISHED!
-			}
-		}
-	}	
-}
+				if(position==2){
+					System.out.println("You spot a raccoon in your front yard. \nWhat do you do? \n 1) Go back inside, wait for it to leave. \n 2) Chase it with a stick. \n 3) Make a run for it.");
+					text = scan.nextLine();
+					if(text.equals("1")){
+						position = 2;
+						if(position==2){
+							System.out.println(two + " You have chosen to wait til the raccoon has left." + "\n" + position + "/26" + "\n*****************************" );
+						}
+					}
+						if(text.equals("2")){
+						position = 999;
+						if(position==999){
+							System.out.println(lose + "\nYou have lost the battle with the raccoon!" + "\n*****************************");
+						}
+					}
+						if(text.equals("3")){
+						
+							position = 3;
+						if(position==3){
+							System.out.println(three + "\nYou spin juked the raccoon! Home free from here out!" + "\n" + position + "/26" + "\n*****************************");
+				
+						}
+					}
+				}
+			
+				if(position==2){
+					System.out.println("Friend has offered you a ride \n 1) Accept \n 2) Decline");
+					text = scan.nextLine();
+					if(text.equals("1")){
+						position = 1000;
+						if(position==1000){
+							System.out.println(sixteen + "\n" + lose + " \nCar Accident! You were half way to school!" + "\n" + "16/26" + "\n*****************************" );
+						}
+					}
+						if(text.equals("2")){
+						position = 3;
+						if(position==3){
+							System.out.println(three + " \nYou have chosen to walk" + "\n" + position + "/26" + "\n*****************************" );
+						}
+					}
+						
+				
+						}
+				
+				if(position==3){
+					System.out.println("You start walking but you realise you forgot your lunch. \n 1) Go back to get it. \n 2) Keep Walking.");
+					text = scan.nextLine();
+					if(text.equals("1")){
+						position = 1001;
+						if(position==1001){
+							System.out.println(lose + " \nYou chose to go back and get your lunch but the Raccoon beat you to it" + "\n*****************************");
+						}
+					}
+						if(text.equals("2")){
+						position = 4;
+						if(position==4){
+							System.out.println(seven + "\nWho needs food anyways? \nYou keep walking." + "\n*****************************");
+						}
+					}
+					
+						
+					
+				}
+	
+	
+	
+	}
+				}
+		
+	
+				
+			
+		
+		
+
