@@ -3,7 +3,7 @@ package poiuyt;
 import java.util.Scanner;
 
 
-public class Main {
+public class poiuyt {
 
 	public static void main(String[] args) {
 		
@@ -50,11 +50,11 @@ public class Main {
 		
 		
 		if(text.equals("2")){
-			System.out.println("This game is about walking to school, the objective is to get to school. \nMake the correct decisions along the way in order to complete the task at hand. \nGood Luck!");
+			System.out.println("This game is about walking to school, the objective is to get to school. \nMake the correct decisions along the way in order to complete the task at hand. \nTo chose a path, type the key that is assigned to the path you want and then press enter. \nGood Luck!");
 		}
 		
 		if(text.equals("3")){
-			System.out.println("Made by Liam Stewart and Mackenzie Craig \n©poiuyt Industries2014");
+			System.out.println("Made by Liam Stewart and Mackenzie Craig \n©poiuyt 2014");
 		}
 		
 		if(text.equals("1")){
@@ -172,6 +172,28 @@ public class Main {
 				}
 			}
 		}
+				if(position==4){
+					System.out.println("When you walk past the alley near your house you hear a metalic sound. \n 1) Run. As fast as you can. \n 2) Act like you didn't hear it, walk away. \n 3) Check it out!");
+					text = scan.nextLine();
+					if(text.equals("1")){
+						position = 6;
+						if(position==6){
+							System.out.println(lose + " \nYou probably didn't need to run, but safety first. You head towards school." + "\n*****************************");
+						}
+					}
+						if(text.equals("2")){
+							position = 5;
+							if(position==5){
+								System.out.println(lose + " \nYou keep heading directly towards school." + "\n*****************************");
+							}
+					}
+						if(text.equals("3")){
+						position = 1002;
+						if(position==1002){
+							System.out.println(seven + "\nYou walk into the alley, and you are interupting a mob metting. looks like your swimming with the fishes." + "\n" + dead + "\n*****************************");
+					}
+				}	
+			}
+		}
 	}
-}
 }
