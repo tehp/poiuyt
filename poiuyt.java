@@ -1,15 +1,13 @@
-package poiuyt;
-
 import java.util.Scanner;
 
 
-public class poiuyt {
+public class test {
 
 	public static void main(String[] args) {
 		
 		
 //PLACES!
-		int dead = 0;
+		String dead = "You did not make it to the school. 'Failiure isnt fatal, but failiure to change might be' \nTry again? (Y/N)";
 		int position = 1;
 		String one = ("X--------------------------O \nYou haven't started your trip to school yet!");
 		String two = ("-X-------------------------O \nYou are this close to school.");
@@ -54,7 +52,7 @@ public class poiuyt {
 		}
 		
 		if(text.equals("3")){
-			System.out.println("Made by Liam Stewart and Mackenzie Craig \n©poiuyt 2014");
+			System.out.println("Made by Liam Stewart and Mackenzie Craig \n©poiuyt 2014 \nCheck our project out on GitHub! http://github.com/dtoast/poiuyt");
 		}
 		
 		if(text.equals("1")){
@@ -149,7 +147,7 @@ public class poiuyt {
 						if(text.equals("2")){
 						position = 3;
 						if(position==3){
-							System.out.println(three + " \nYou have chosen to walk" + "\n" + position + "/26" + "\n*****************************" );
+							System.out.println(four + " \nYou have chosen to walk" + "\n" + position + "/26" + "\n*****************************" );
 						}
 					}
 						
@@ -168,7 +166,7 @@ public class poiuyt {
 						if(text.equals("2")){
 						position = 4;
 						if(position==4){
-							System.out.println(seven + "\nWho needs food anyways? \nYou keep walking." + "\n*****************************");
+							System.out.println(five + "\nWho needs food anyways? \nYou keep walking." + "\n*****************************");
 				}
 			}
 		}
@@ -176,21 +174,43 @@ public class poiuyt {
 					System.out.println("When you walk past the alley near your house you hear a metalic sound. \n 1) Run. As fast as you can. \n 2) Act like you didn't hear it, walk away. \n 3) Check it out!");
 					text = scan.nextLine();
 					if(text.equals("1")){
-						position = 6;
-						if(position==6){
-							System.out.println(lose + " \nYou probably didn't need to run, but safety first. You head towards school." + "\n*****************************");
+						position = 5;
+						if(position==5){
+							System.out.println(six + " \nYou probably didn't need to run, but safety first. You head towards school." + "\n*****************************");
 						}
 					}
 						if(text.equals("2")){
 							position = 5;
 							if(position==5){
-								System.out.println(lose + " \nYou keep heading directly towards school." + "\n*****************************");
+								System.out.println(six + " \nYou keep heading directly towards school." + "\n*****************************");
 							}
 					}
 						if(text.equals("3")){
 						position = 1002;
 						if(position==1002){
-							System.out.println(seven + "\nYou walk into the alley, and you are interupting a mob metting. looks like your swimming with the fishes." + "\n" + dead + "\n*****************************");
+							System.out.println(lose + "\nYou walk into the alley, and you are interupting a mob metting. looks like your swimming with the fishes." + "\n" + dead + "\n*****************************");
+					}
+				}	
+			}
+				if(position==5){
+					System.out.println("How fast do you want to walk to school? \n 1) Slow walk. \n 2) Fast walk. \n 3) Run!");
+					text = scan.nextLine();
+					if(text.equals("1")){
+						position = 6;
+						if(position==5){
+							System.out.println(seven + " \nA slow walk? What are you, my Grandpa?" + "\n*****************************");
+						}
+					}
+						if(text.equals("2")){
+							position = 6;
+							if(position==5){
+								System.out.println(eight + " \nA fast walk. Good choice!" + "\n*****************************");
+							}
+					}
+						if(text.equals("3")){
+						position = 1002;
+						if(position==1002){
+							System.out.println(fifteen + "\nYou run, and make up good ground, but you end up triping over a curb. You head to the hospital." + "\n" + dead + "\n*****************************");
 					}
 				}	
 			}
