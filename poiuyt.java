@@ -44,7 +44,20 @@ public class Main {
 		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		
-		//Original Question FINISHED!
+		
+		System.out.println("********************* \nWelcome to poiuyt \n 1) Play. \n 2) How to play. \n 3) Credits. \n*********************");
+		text = scan.nextLine();
+		
+		
+		if(text.equals("2")){
+			System.out.println("This game is about walking to school, the objective is to get to school. \nMake the correct decisions along the way in order to complete the task at hand. \nGood Luck!");
+		}
+		
+		if(text.equals("3")){
+			System.out.println("Made by Liam Stewart and Mackenzie Craig \n©poiuyt Industries2014");
+		}
+		
+		if(text.equals("1")){
 		System.out.println("You have just woken up, school starts in 30 minutes! \nWhat would you like to do? \n 1) Go back to bed. \n 2) Get ready for school, leave house headed towards school. \n 3) Lay in bed for 5 minutes.");
 		
 		text = scan.nextLine();
@@ -70,7 +83,7 @@ public class Main {
 					System.out.println(one + "\n" + position + "/26" + "\n*****************************");
 					}
 				}
-	
+		
 	
 		//Path 1-1 FINISHED!
 		if(position==1){
@@ -160,4 +173,5 @@ public class Main {
 			}
 		}
 	}
+}
 }
