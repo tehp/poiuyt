@@ -1,7 +1,8 @@
+package poiuyt;
 import java.util.Scanner;
 
 
-public class test {
+public class Main {
 
 	public static void main(String[] args) {
 		
@@ -43,7 +44,7 @@ public class test {
 		Scanner scan = new Scanner(System.in);
 		
 		
-		System.out.println("********************* \nWelcome to poiuyt \n 1) Play. \n 2) How to play. \n 3) Credits. \n*********************");
+		System.out.println("***************************** \nWelcome to poiuyt \n 1) Play. \n 2) How to play. \n 3) Credits. \n*****************************");
 		text = scan.nextLine();
 		
 		
@@ -188,7 +189,7 @@ public class test {
 						if(text.equals("3")){
 						position = 1002;
 						if(position==1002){
-							System.out.println(lose + "\nYou walk into the alley, and you are interupting a mob metting. looks like your swimming with the fishes." + "\n" + dead + "\n*****************************");
+							System.out.println(lose + "\nYou walk into the alley, and you are interupting a mob meetting. Looks like your swimming with the fishes." + "\n" + dead + "\n*****************************");
 					}
 				}	
 			}
