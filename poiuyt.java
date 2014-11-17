@@ -8,7 +8,7 @@ public class Main {
 		
 		
 //PLACES!
-		String dead = "You did not make it to the school. 'Failiure isnt fatal, but failiure to change might be' \nTry again? (Y/N)";
+		String lose = "You did not make it to the school. 'Failiure isnt fatal, but failiure to change might be' \n Try Again? \n 1) Yes \n 2) No";
 		int position = 1;
 		String one = ("X--------------------------O \nYou haven't started your trip to school yet!");
 		String two = ("-X-------------------------O \nYou are this close to school.");
@@ -37,32 +37,60 @@ public class Main {
 		String twentyfive = ("------------------------X--O");
 		String twentysix = ("-------------------------X-O");
 		String twentyseven = ("--------------------------XO");
-		String lose = ("You have failed your trip to school. Make better decisions next time!");
+		String dead = ("You have failed your trip to school. Make better decisions next time!");
 		
 		String text;
 		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		
+		position = 0;
 		
+		if(position == 0)
 		System.out.println("***************************** \nWelcome to poiuyt \n 1) Play. \n 2) How to play. \n 3) Credits. \n*****************************");
 		text = scan.nextLine();
 		
+		if(text.equals("1")){
+			position = 500;
+		}
+		
+		
+	
+		
+		
+		
 		
 		if(text.equals("2")){
-			System.out.println("This game is about walking to school, the objective is to get to school. \nMake the correct decisions along the way in order to complete the task at hand. \nTo chose a path, type the key that is assigned to the path you want and then press enter. \nGood Luck!");
+			System.out.println("This game is about walking to school, the objective is to get to school. \nMake the correct decisions along the way in order to complete the task at hand. \nTo chose a path, type the key that is assigned to the path you want and then press enter. \nGood Luck! \n Start Game? \n 1) Yes \n 2) No \n*****************************");
+			text = scan.nextLine();
+			if(text.equals("1")){
+				position = 500;
+			}
+				if(text.equals("2")){
+				System.out.println("Thanks for not playing!\n---poiuyt Terminated---\n*****************************");
+				}
+			
+		
 		}
 		
 		if(text.equals("3")){
-			System.out.println("Made by Liam Stewart and Mackenzie Craig \n©poiuyt 2014 \nCheck our project out on GitHub! http://github.com/dtoast/poiuyt");
+			System.out.println("\n****************************************************************\nMade by Liam Stewart and Mackenzie Craig \n©poiuyt 2014 \nCheck our project out on GitHub! http://github.com/dtoast/poiuyt \n Start Game? \n 1) Yes \n 2) No\n****************************************************************");
+			text = scan.nextLine();
+			if(text.equals("1")){
+				position = 500;
+			}
+				if(text.equals("2")){
+				System.out.println("Thanks for not playing!\n---poiuyt Terminated---\n*****************************");
+				}
 		}
 		
-		if(text.equals("1")){
+		
+		if(position==500){
 		System.out.println("You have just woken up, school starts in 30 minutes! \nWhat would you like to do? \n 1) Go back to bed. \n 2) Get ready for school, leave house headed towards school. \n 3) Lay in bed for 5 minutes.");
 		
 		text = scan.nextLine();
 			//1
 				if(text.equals("1")){
-		
+					position = 1;
 					if(position==1){
 					System.out.println(one + "\n" + position + "/26" + "\n*****************************");
 					}
@@ -77,7 +105,7 @@ public class Main {
 				}
 			//3
 				if(text.equals("3")){
-					
+					position = 1;
 					if(position==1){
 					System.out.println(one + "\n" + position + "/26" + "\n*****************************");
 					}
@@ -89,8 +117,8 @@ public class Main {
 			System.out.println("The bells are about to go! You slept in too long! \n 1) Skip class, go back to bed. \n 2) Hurry, put clothes on, exit house running to school \n 3) Take your time, make a lunch, watch some TV and hopefully make it to school before 2nd block starts.");
 			text = scan.nextLine();
 			if(text.equals("1")){
-				position = 0;
-				if(position==0){
+				position = 1;
+				if(position==1){
 					System.out.println(one + " \nYou have chosen to skip class! You have failed your trip to school!" + "\n" + position + "/26" + "\n*****************************" );
 				}
 			}
@@ -124,6 +152,13 @@ public class Main {
 						position = 999;
 						if(position==999){
 							System.out.println(lose + "\nYou have lost the battle with the raccoon!" + "\n*****************************");
+							text = scan.nextLine();
+							if(text.equals("1")){
+							position = 0;
+						}
+							if(text.equals("2")){
+							System.out.println("Thanks for playing!");
+						}
 						}
 					}
 						if(text.equals("3")){
@@ -189,7 +224,7 @@ public class Main {
 						if(text.equals("3")){
 						position = 1002;
 						if(position==1002){
-							System.out.println(lose + "\nYou walk into the alley, and you are interupting a mob meetting. Looks like your swimming with the fishes." + "\n" + dead + "\n*****************************");
+							System.out.println(lose + "\nYou walk into the alley, and you are interupting a mob meeting. Looks like your swimming with the fishes." + "\n" + dead + "\n*****************************");
 					}
 				}	
 			}
@@ -215,6 +250,7 @@ public class Main {
 					}
 				}	
 			}
+		
 		}
 	}
 }
