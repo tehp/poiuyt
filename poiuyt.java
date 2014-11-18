@@ -233,13 +233,13 @@ public class Main {
 					text = scan.nextLine();
 					if(text.equals("1")){
 						position = 6;
-						if(position==5){
+						if(position==6){
 							System.out.println(seven + " \nA slow walk? What are you, my Grandpa?" + "\n*****************************");
 						}
 					}
 						if(text.equals("2")){
-							position = 6;
-							if(position==5){
+							position = 9;
+							if(position==9){
 								System.out.println(eight + " \nA fast walk. Good choice!" + "\n*****************************");
 							}
 					}
@@ -251,6 +251,52 @@ public class Main {
 				}	
 			}
 		
+				if(position==6){
+					System.out.println("You come up to an intersection and see a child on the ground! \nWhat do you do? \n 1) Run over and help the child. \n 2) Keep walking as if you didn't see anything \n 3) Stay where you are and call for help!");
+					text = scan.nextLine();
+					if(text.equals("1")){
+						position = 1006;
+						if(position==1006){
+							System.out.println(nine + " \nYou run over and help this child. *SPLAT* \nOnly place you went was all over someones windshield! \nBetter Luck next time!" + dead + "\n*****************************");
+						}
+					}
+						if(text.equals("2")){
+							position = 9;
+							if(position==9){
+								System.out.println(ten + " \nYou keep walki...*SPLAT* You don't have to look back to know what that was." + "\n*****************************");
+							}
+					}
+						if(text.equals("3")){
+						position = 1007;
+						if(position==1007){
+							System.out.println(nine + "\nYou stayed and helped a child in need! Gold star for you! Although you didn't make it to school." + "\n" + dead + "\n*****************************");
+					}
+				}	
+			}
+		
+				if(position==9){
+					System.out.println("White Van pulls up beside you and the driver asks you to get in. \nWhat do you do? \n 1) Call for help! \n 2) Run as fast as you can! \n 3) Get in the Van.");
+					text = scan.nextLine();
+					if(text.equals("1")){
+						position = 1008;
+						if(position==1008){
+							System.out.println(thirteen + " \nYou called for help and 6 more white vans pull up." + dead + "\n*****************************");
+						}
+					}
+						if(text.equals("2")){
+							position = 9;
+							if(position==9){
+								System.out.println(sixteen + " \nYou run and lose the Van!" + "\n*****************************");
+							}
+					}
+						if(text.equals("3")){
+						position = 1009;
+						if(position==1009){
+							System.out.println(nine + "\nHaven't your parents told you not to get into strangers vehicles?" + "\n" + dead + "\n*****************************");
+					}
+				}	
+			}
+				
 		}
 	}
 }
