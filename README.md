@@ -42,3 +42,6 @@ The main goal is to provide an adventure that differs based on what path you cho
 8.	A brief timeline of when you expect to have certain parts/checkpoints of your project complete.  
 Once your project is approved you can begin working on it.  <br>
 We want to be done a few days (atleast) before the due date of the project, but I would be happy to be done a few weeks early.
+
+
+for liam <3 http://i.imgur.com/h9xVcvO.png
