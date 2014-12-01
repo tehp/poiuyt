@@ -2,7 +2,7 @@ package poiuyt;
 import java.util.Scanner;
 
 
-public class Main {
+public class poiuyt {
 
 	public static void main(String[] args) {
 		
@@ -275,7 +275,7 @@ public class Main {
 			}
 		
 				if(position==9){
-					System.out.println("White Van pulls up beside you and the driver asks you to get in. \nWhat do you do? \n 1) Call for help! \n 2) Run as fast as you can! \n 3) Get in the Van.");
+					System.out.println("White Van pulls up beside you and the driver asks you to get in. \nWhat do you do? \n 1) Call for help! \n 2) Attempt to cross the busy street to escape the van! \n 3) Get in the Van. \n 4) Ask if he has candy!");
 					text = scan.nextLine();
 					if(text.equals("1")){
 						position = 1008;
@@ -284,8 +284,8 @@ public class Main {
 						}
 					}
 						if(text.equals("2")){
-							position = 9;
-							if(position==9){
+							position = 10;
+							if(position==10){
 								System.out.println(sixteen + " \nYou run and lose the Van!" + "\n*****************************");
 							}
 					}
@@ -295,8 +295,29 @@ public class Main {
 							System.out.println(nine + "\nHaven't your parents told you not to get into strangers vehicles?" + "\n" + dead + "\n*****************************");
 					}
 				}	
+						if(text.equals("4")){
+						position = 1009;
+						if(position==1009){
+							System.out.println(nine + "\nAre you serious..?" + "\n" + dead + "\n*****************************");
+					}
+				}	
 			}
-				
+				if(position==10){
+					System.out.println("As you walk on a man with his hood covering his head bumps into you... you think you feel him take your wallet but you aren't sure. \n 1) Chase down the man and demand your wallet back. \n 2) Keep moving. School is more important than money. Remember what Biggie said, 'mo money mo problems'.");
+					text = scan.nextLine();
+					if(text.equals("1")){
+						position = 1008;
+						if(position==1008){
+							System.out.println(thirteen + " \nThe man turns on you and roundhouse kicks you in the face \n" + dead + "\n*****************************");
+						}
+					}
+						if(text.equals("2")){
+							position = 11;
+							if(position==11){
+								System.out.println(sixteen + " \nYou swollow your pride and move on without your wallet." + "\n*****************************");
+					}
+				}
+			}
 		}
 	}
 }
