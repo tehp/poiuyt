@@ -318,6 +318,66 @@ public class poiuyt {
 					}
 				}
 			}
+				if(position==11){
+					System.out.println("You are nearing the gas station near the school. Do you want to stop to buy something? \n 1)Yes \n 2) No");
+					text = scan.nextLine();
+					if(text.equals("1")){
+						position = 12;
+						if(position==12){
+							System.out.println(thirteen + " \nYou enter the gas station; \n" + "\n*****************************");
+						}
+					}
+						if(text.equals("2")){
+							position = 1008;
+							if(position==1008){
+								System.out.println(sixteen + " \nYou don't go to the gas station, but when you walk past you get ran over by a semi." + dead + "\n*****************************");
+					}
+				}
+			}
+				if(position==12){
+					System.out.println("\n Shopkeeper: 'Hi welcome to GasZone what do you want to buy?' \n 1) A Coffee \n 2) A Chocolate Bar \n 3) Dried Fruit and nuts");
+					text = scan.nextLine();
+					if(text.equals("1")){
+						position = 13;
+						if(position==13){
+							System.out.println(thirteen + " \nYou chose to buy coffee. You exit the store and walk towards school. \n" + "\n*****************************");
+						}
+					}
+						if(text.equals("2")){
+							position = 1008;
+							if(position==1008){
+								System.out.println(sixteen + " \nYou chose to buy a chocolate bar. You consume it, and as you bite you feel something crunchy... A needle!" + dead + "\n*****************************");
+					}
+				}
+						if(text.equals("3")){
+							position = 13;
+							if(position==13){
+								System.out.println(thirteen + " \nYou chose to buy dried fruit and nuts. You exit the store and walk towards school. \n" + "\n*****************************");
+							}
+						}
+			}
+				if(position==13){
+					System.out.println("\n ");
+					text = scan.nextLine();
+					if(text.equals("1")){
+						position = 13;
+						if(position==13){
+							System.out.println(thirteen + " \nYou chose to buy coffee. You exit the store and walk towards school. \n" + "\n*****************************");
+						}
+					}
+						if(text.equals("2")){
+							position = 1008;
+							if(position==1008){
+								System.out.println(sixteen + " \nYou chose to buy a chocolate bar. You consume it, and as you bite you feel something crunchy... A needle!" + dead + "\n*****************************");
+					}
+				}
+						if(text.equals("3")){
+							position = 13;
+							if(position==13){
+								System.out.println(thirteen + " \nYou chose to buy dried fruit and nuts. You exit the store and walk towards school. \n" + "\n*****************************");
+							}
+						}
+			}
 		}
 	}
 }
