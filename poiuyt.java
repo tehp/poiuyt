@@ -314,12 +314,12 @@ public class poiuyt {
 						if(text.equals("2")){
 							position = 11;
 							if(position==11){
-								System.out.println(sixteen + " \nYou swollow your pride and move on without your wallet." + "\n*****************************");
+								System.out.println(twelve + " \nYou swollow your pride and move on without your wallet." + "\n*****************************");
 					}
 				}
 			}
 				if(position==11){
-					System.out.println("You are nearing the gas station near the school. Do you want to stop to buy something? \n 1)Yes \n 2) No");
+					System.out.println("You are nearing the gas station near the school. Do you want to stop to buy something? \n 1) Yes \n 2) No");
 					text = scan.nextLine();
 					if(text.equals("1")){
 						position = 12;
@@ -346,38 +346,75 @@ public class poiuyt {
 						if(text.equals("2")){
 							position = 1008;
 							if(position==1008){
-								System.out.println(sixteen + " \nYou chose to buy a chocolate bar. You consume it, and as you bite you feel something crunchy... A needle!" + dead + "\n*****************************");
+								System.out.println(thirteen + " \nYou chose to buy a chocolate bar. You consume it, and as you bite you feel something crunchy... A needle!" + dead + "\n*****************************");
 					}
 				}
 						if(text.equals("3")){
-							position = 13;
-							if(position==13){
+							position = 69;
+							if(position==69){
 								System.out.println(thirteen + " \nYou chose to buy dried fruit and nuts. You exit the store and walk towards school. \n" + "\n*****************************");
 							}
 						}
 			}
-				if(position==13){
-					System.out.println("\n ");
+				if(position==69){
+					System.out.println("\n Your friends drive by you, they wave at you from the windows of their car.\n 1) Wave Back \n 2) Ignore");
 					text = scan.nextLine();
 					if(text.equals("1")){
-						position = 13;
-						if(position==13){
-							System.out.println(thirteen + " \nYou chose to buy coffee. You exit the store and walk towards school. \n" + "\n*****************************");
+						position = 70;
+						if(position==70){
+							System.out.println(sixteen + " \nYou wave back, they smile at you.");
 						}
 					}
 						if(text.equals("2")){
-							position = 1008;
-							if(position==1008){
-								System.out.println(sixteen + " \nYou chose to buy a chocolate bar. You consume it, and as you bite you feel something crunchy... A needle!" + dead + "\n*****************************");
+							position = 70;
+							if(position==70){
+								System.out.println(sixteen + " \nYou do not wave back to your friends. Ass hole.");
 					}
 				}
-						if(text.equals("3")){
-							position = 13;
-							if(position==13){
-								System.out.println(thirteen + " \nYou chose to buy dried fruit and nuts. You exit the store and walk towards school. \n" + "\n*****************************");
-							}
-						}
+
 			}
+				if(position==70){
+					System.out.println("\n Do you want to eat some of the dried fruit and nuts? \n 1) Yes \n 2) Throw them out");
+					text = scan.nextLine();
+					if(text.equals("1")){
+						position = 1009;
+						if(position==1009){
+							System.out.println(twenty + " \nYou eat a handful of the mix, too bad your allergic..." + dead + "\n*****************************");
+						}
+					}
+						if(text.equals("2")){
+							position = 1009;
+							if(position==1009){
+								System.out.println(nineteen + " \nYou threw out your only food! You starve!" + dead + "\n*****************************");
+					}
+				}
+
+			}
+				if(position==13){
+					System.out.println("\n You can see steam flowing from the lid of your coffee, it is very hot. \n 1) Drink some \n 2) Wait until it cools down");
+					text = scan.nextLine();
+					if(text.equals("1")){
+						position = 14;
+						if(position==14){
+							System.out.println(twentyfour + " \nYou drink some of the coffee, it is hot but doesn't burn your mouth.");
+						}
+					}
+						if(text.equals("2")){
+							position = 1010;
+							if(position==1010){
+								System.out.println(twentytwo + " \nYou leave the coffee full, but when walking you spill the cup on yourself!" + dead + "\n*****************************");
+					}
+				}
+			}
+				if(position==14){
+					System.out.println("\n \n \n You have arrived at school. \n \n \n 1) Open the door");
+					text = scan.nextLine();
+					if(text.equals("1")){
+						position = 15;
+						if(position==15){
+							System.out.println(twentyseven + " \n Congratulations... You have made it to school.");
+						}
+					}
 		}
-	}
-}
+		}
+	}}
