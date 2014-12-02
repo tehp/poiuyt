@@ -2,7 +2,7 @@ package poiuyt;
 import java.util.Scanner;
 
 
-public class poiuyt {
+public class Main {
 
 	public static void main(String[] args) {
 		
@@ -81,6 +81,7 @@ public class poiuyt {
 				if(text.equals("2")){
 				System.out.println("Thanks for not playing!\n---poiuyt Terminated---\n*****************************");
 				}
+				
 		}
 		
 		
@@ -110,7 +111,11 @@ public class poiuyt {
 					System.out.println(one + "\n" + position + "/26" + "\n*****************************");
 					}
 				}
-		
+				if(text.equals("poiuyt")){
+					System.out.println("cheater, cheater, pumpkin eater");
+					position = 14;
+				    	
+				}
 	
 		//Path 1-1 FINISHED!
 		if(position==1){
@@ -407,14 +412,18 @@ public class poiuyt {
 				}
 			}
 				if(position==14){
-					System.out.println("\n \n \n You have arrived at school. \n \n \n 1) Open the door");
+					System.out.println("\n");
+					System.out.println("\n");
+					System.out.println("\n");
+					System.out.println("\n You have arrived at school. \n \n \n 1) Open the door");
 					text = scan.nextLine();
 					if(text.equals("1")){
 						position = 15;
 						if(position==15){
-							System.out.println(twentyseven + " \n Congratulations... You have made it to school.");
-						}
+							System.out.println(twentyseven + "\n" + " \n Congratulations... You have made it to school. \n \n View the source code: http://github.com/dtoast/poiuyt");
 					}
+				}
+			}
 		}
-		}
-	}}
+	}
+}
