@@ -2,7 +2,7 @@ package poiuyt;
 import java.util.Scanner;
 
 
-public class Main {
+public class poiuyt {
 
 	public static void main(String[] args) {
 		
@@ -39,6 +39,18 @@ public class Main {
 		String twentyseven = ("--------------------------XO");
 		String dead = ("You have failed your trip to school. Make better decisions next time!");
 		
+		System.out.println("                                    __      ");
+		System.out.println("                __                 /\\ \\\\__   ");
+		System.out.println(" _____     ___ /\\_\\  __  __  __  __\\ \\ ,_\\  ");
+		System.out.println("/\\ '__`\\  / __`\\/\\ \\/\\ \\/\\ \\/\\ \\/\\ \\\\ \\ \\/  ");
+		System.out.println("\\ \\ \\L\\ \\/\\ \\L\\ \\ \\ \\ \\ \\_\\ \\ \\ \\_\\ \\\\ \\ \\_ ");
+		System.out.println(" \\ \\ ,__/\\ \\____/\\ \\_\\ \\____/\\/`____ \\\\ \\__\\");
+		System.out.println("  \\ \\ \\/  \\/___/  \\/_/\\/___/  `/___/> \\\\/__/");
+		System.out.println("   \\ \\_\\                         /\\___/     ");
+		System.out.println("    \\/_/                         \\/__/      ");
+		System.out.println("\n");
+		
+		
 		String text;
 		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
@@ -73,7 +85,33 @@ public class Main {
 		}
 		
 		if(text.equals("3")){
-			System.out.println("\n****************************************************************\nMade by Liam Stewart and Mackenzie Craig \n©poiuyt 2014 \nCheck our project out on GitHub! http://github.com/dtoast/poiuyt \n Start Game? \n 1) Yes \n 2) No\n****************************************************************");
+			System.out.println("\n");
+			System.out.println("\n");
+			System.out.println("    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");    
+			System.out.println("   @@  @@                                                 @@");    
+			System.out.println("  @@    @@       Made by Liam Stewart and Mac Craig       @@"); 
+			System.out.println("  @@    @@                                                @@");
+			System.out.println("   @@  @@                                                 @@");
+			System.out.println("    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      @@");
+			System.out.println("                                                  @@      @@");
+			System.out.println("                check out the project here:       @@      @@");
+			System.out.println("                                                 @ @      @@"); 
+			System.out.println("    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  @      @@");
+			System.out.println("   @@  @@                                       @  @      @@");
+			System.out.println("  @@    @@   http://github.com/dtoast/poiuyt    @  @      @@");
+			System.out.println("  @@    @@                                      @  @      @@");
+			System.out.println("   @@  @@                                       @  @      @@");
+			System.out.println("    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      @@");
+			System.out.println("                                                          @@");
+			System.out.println("     this is a poiuyt by the way. an impossible object    @@");
+			System.out.println("                                                          @@");
+			System.out.println("    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+			System.out.println("   @@  @@                                                 @@");
+			System.out.println("  @@    @@        Start game? 1) Yes 2) No               @@");
+			System.out.println("  @@    @@                                              @@");
+			System.out.println("   @@  @@                                              @@"); 
+			System.out.println("    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+
 			text = scan.nextLine();
 			if(text.equals("1")){
 				position = 500;
@@ -81,7 +119,6 @@ public class Main {
 				if(text.equals("2")){
 				System.out.println("Thanks for not playing!\n---poiuyt Terminated---\n*****************************");
 				}
-				
 		}
 		
 		
@@ -116,6 +153,8 @@ public class Main {
 					position = 14;
 				    	
 				}
+				}
+		
 	
 		//Path 1-1 FINISHED!
 		if(position==1){
@@ -412,18 +451,30 @@ public class Main {
 				}
 			}
 				if(position==14){
-					System.out.println("\n");
-					System.out.println("\n");
-					System.out.println("\n");
-					System.out.println("\n You have arrived at school. \n \n \n 1) Open the door");
+					System.out.println("\n \n \n You have arrived at school. \n \n \n 1) Open the door");
 					text = scan.nextLine();
 					if(text.equals("1")){
 						position = 15;
 						if(position==15){
-							System.out.println(twentyseven + "\n" + " \n Congratulations... You have made it to school. \n \n View the source code: http://github.com/dtoast/poiuyt");
+							System.out.println("\n");
+							System.out.println("\n");
+							System.out.println(twentyseven + " \n Congratulations... You have made it to school.");
+							System.out.println("\n");
+							System.out.println("\n");
+							System.out.println("                                    __      ");
+							System.out.println("                __                 /\\ \\\\__   ");
+							System.out.println(" _____     ___ /\\_\\  __  __  __  __\\ \\ ,_\\  ");
+							System.out.println("/\\ '__`\\  / __`\\/\\ \\/\\ \\/\\ \\/\\ \\/\\ \\\\ \\ \\/  ");
+							System.out.println("\\ \\ \\L\\ \\/\\ \\L\\ \\ \\ \\ \\ \\_\\ \\ \\ \\_\\ \\\\ \\ \\_ ");
+							System.out.println(" \\ \\ ,__/\\ \\____/\\ \\_\\ \\____/\\/`____ \\\\ \\__\\");
+							System.out.println("  \\ \\ \\/  \\/___/  \\/_/\\/___/  `/___/> \\\\/__/");
+							System.out.println("   \\ \\_\\                         /\\___/     ");
+							System.out.println("    \\/_/                         \\/__/      ");
+							System.out.println("\n");
+							System.out.println("Game by Mac Craig and Liam Stewart. http://github.com/dtoast/poiuyt");
+							
+						}
 					}
-				}
-			}
+		}
 		}
 	}
-}
